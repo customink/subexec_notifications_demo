@@ -1,0 +1,2 @@
+module Subscribers
+end
