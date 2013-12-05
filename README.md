@@ -7,7 +7,7 @@ Small little Rails app meant to demo possible usage of the [subexec-notification
 
 The `config/initializers/subexec_notifications` file demos all the possible places that we instrument `Subexec` (system commands). I have implmented a basic [Librato](https://metrics.librato.com/) subscriber class that would collect these metrics. Check out the `app/models/subscribers` directory. It has a base class that instantiates events so each subclass does not have to. Finally, run `$ rake test` to submit some faux data and events.
 
-**REMEMBER**: This setup does not take into account how one might setup instrumented events to not block the primary duty of a web process - to serve web requests.
+**REMEMBER**: This setup does not take into account how one might setup instrumented events that do not block the primary duty of a web process - to serve web requests.
 
 ### subexec.hosts
 
